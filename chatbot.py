@@ -2,12 +2,12 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure the Gemini API with your API key
-API_KEY = "AIzaSyDAwiPI7z773tmYm5j1UaLlZPArxc5fggU"  # Replace with your actual API key
+API_KEY = "AIzaSyDAwiPI7z773tmYm5j1UaLlZPArxc5fggU"  
 genai.configure(api_key=API_KEY)
 
 # Initialize the model
 try:
-    model = genai.GenerativeModel("gemini-1.5-pro")  # Updated model name
+    model = genai.GenerativeModel("gemini-1.5-pro")  
 except Exception as e:
     st.error(f"Model initialization failed: {e}")
 
